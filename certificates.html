@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Pharma Pallets - Swapnroop</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Email Icon -->
+<a href="mailto:info@swapnroop.com" class="email-ball" title="Send Email">
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+<!-- Cookie Consent Popup -->
+<div class="cookie-popup" id="cookiePopup">
+  <div class="cookie-content">
+    <h3>Accept Cookies</h3>
+    <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+    <button id="acceptCookies">Accept All</button>
+  </div>
+</div>
+
+
+
+<!-- Navbar -->
+<nav class="navbar">
+  <img src="img/Intertwined Green and Red _S_ Logo.png" alt="Swapnroop Logo" class="logo">
+  <div class="logo-container">
+    <div class="logo-text">
+      <div class="green-text swapnroop">SWAPNROOP</div>
+      <div class="red-text"><b>DRUGS</b> &amp; <b>PHARMACEUTICALS</b></div>
+    </div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="abt.html">About</a></li>
+    <li class="dropdown">
+      <a href="">Products <i class="fa fa-caret-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="prducts.html">Pellets</a></li>
+        <li><a href="apis.html">API's</a></li>
+        <li><a href="otherpellets.html">other pellets</a></li>
+
+
+      
+      </ul>
+    </li>
+    <li><a href="#">  Certificates & Awards </a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Header Section -->
+<section class="header-slider">
+  <div class="header-container">
+    <div class="curve-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" fill="#fff"></path>
+  </svg>
+</div>
+
+    <div class="header-text">
+      
+      <h1 class="animate-zoom">
+  <span class="green-text">SWAPNROOP</span> 
+  <span class="red-text">DRUGS &amp; PHARMACEUTICALS</span>
+</h1>
+
+      <p class="animate-up">HOW CAN I HELP YOU</p>
+     
+    </div>
+    <div class="header-image">
+      <img src="img/mg header.jpg" alt="Business Man" />
+    </div>
+  </div> 
+</section>
+
+
+
+<section>
+
+<section class="certificate-section">
+  <div class="certificate-container">
+    
+    <!-- Left Side: Certificates -->
+    <div class="certificate-gallery">
+      <h2></h2>
+      <div class="certificate-card">
+        <img src="img/certification.jpg" alt="Certificate 1">
+      </div>
+      <div class="certificate-card">
+        <img src="img/unnamed (1).jpg" alt="Certificate 2">
+      </div>
+    </div>
+
+    <!-- Right Side: Achievements Text -->
+    <div class="certificate-text">
+      <h2 class="achievements-title">Our <span>Achievements</span></h2>
+      <p><em>Pride in Excellence</em> We are thrilled to announce that 
+        <strong>Swapnroop Drugs and Pharmaceuticals</strong> has been recognized 
+        as the <strong>Best Pharmaceutical Company in Aurangabad, Maharashtra, 
+        for the year 2023</strong>. This prestigious acknowledgment is a testament 
+        to our unwavering commitment to excellence, innovation, and the relentless 
+        pursuit of healthcare solutions that make a difference.
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="certificate-section">
+  <div class="certificate-container">
+
+    <!-- Left Side: Certificates -->
+    <div class="certificate-gallery">
+      <h2>Our Certificates</h2>
+      <div class="certificate-card"><img src="cert1.jpg" alt="Certificate 1"></div>
+      <div class="certificate-card"><img src="cert2.jpg" alt="Certificate 2"></div>
+      <div class="certificate-card"><img src="cert3.jpg" alt="Certificate 3"></div>
+      <div class="certificate-card"><img src="cert4.jpg" alt="Certificate 4"></div>
+      <div class="certificate-card"><img src="cert5.jpg" alt="Certificate 5"></div>
+    </div>
+
+    <!-- Right Side: Text Area -->
+    <div class="certificate-text">
+      <h3>Commitment to Quality</h3>
+      <p>
+        Each certificate is a testament to our unwavering dedication  
+        to safety, precision, and customer trust.
+      </p>
+    </div>
+  </div>
+</section>
+
+ 
+
+<script src="slider.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+  const slides = document.querySelector('.slides');
+const slideItems = document.querySelectorAll('.slide');
+let idx = 0;
+
+document.querySelector('.arrow.next').onclick = () => {
+  idx = (idx + 1) % slideItems.length;
+  update();
+};
+document.querySelector('.arrow.prev').onclick = () => {
+  idx = (idx - 1 + slideItems.length) % slideItems.length;
+  update();
+};
+
+function update() {
+  slides.style.transform = `translateX(-${idx * 100}%)`;
+}
+
+
+</script>
+
+  </body>
+</html>
